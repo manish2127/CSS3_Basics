@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .class1:active {
+            font-size: 50px;
+        }
+        
+        .class1:active+p {
+            font-size: 7px;
+        }
+        
+        .myList li {
+            background: #CEE7FF;
+            padding: 12px;
+            margin: 4px;
+            color: #06F;
+        }
+        
+        .myList li:hover {
+            background: #B7FFC4;
+            padding: 12px;
+            margin: 4px;
+            color: #090;
+        }
+        
+        input:focus {
+            background: #c4e1ff;
+        }
+        
+        #email_status {
+            display: none;
+        }
+        
+        #email:focus~#email_status {
+            display: inline;
+        }
+    </style>
+</head>
+
+<body>
+    <p class="class1">My paragraph</p>
+    <p>My paragraph</p>
+    <ul class="myList">
+        <li>List Item 1</li>
+        <li>List Item 1</li>
+        <li>List Item 1</li>
+    </ul>
+    <input name="email">
+    <input name="password">
+    <br/>
+    <input id="email" type="email" placeholder="Email Address">
+    <span id="email_status">Do not enter fake email.</span>
+</body>
+
+</html>

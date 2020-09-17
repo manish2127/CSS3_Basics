@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        p::first-line {
+            color: brown;
+        }
+        
+        p::first-letter {
+            font-size: 24px;
+            color: #09C;
+        }
+        
+        p::before,
+        p::after {
+            content: "String.....";
+        }
+    </style>
+</head>
+
+<body>
+    <p>My paragraph content <br> keeps going...<br>and going...</p>
+</body>
+
+<p>paragraph content</p>
+<p>paragraph content</p>
+<p>paragraph content</p>
+<p>paragraph content</p>
+
+</html>
